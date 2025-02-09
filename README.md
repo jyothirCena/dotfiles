@@ -30,5 +30,6 @@ $ cd dotfiles
 then use GNU stow to create symlinks
 
 ```
-$ stow .
+$ stow */   <!--To symlink all configs-->
+$ stow zsh  <!--To symlink only particular config-->
 ```
