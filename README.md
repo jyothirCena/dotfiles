@@ -23,13 +23,20 @@ pacman -S stow
 First, check out the dotfiles repo in your $HOME directory using git
 
 ```
-$ git clone https://github.com/jyothirCena/dotfiles.git
-$ cd dotfiles
+git clone https://github.com/jyothirCena/dotfiles.git
+cd dotfiles
 ```
 
 then use GNU stow to create symlinks
 
+to stow all configs
+
 ```
-$ stow */   <!--To symlink all configs-->
-$ stow zsh  <!--To symlink only particular config-->
+stow */   
+```
+
+to symlink only particular config
+
+```
+stow zsh
 ```
