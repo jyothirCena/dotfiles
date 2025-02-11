@@ -1,7 +1,11 @@
 #!/bin/bash
 
-wallDir=~/.config/rofi/backgrounds
+wallDir=$HOME/.cache/backgrounds
 wall=$1
+
+if [ ! -d "$wallDir" ]; then
+	mkdir -p "$wallDir"
+fi
 
 if [ $# -eq 1 ];
 then

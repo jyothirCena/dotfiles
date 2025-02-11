@@ -141,7 +141,7 @@
 "custom/power": {
 	"format": " ⏻ ",
 	"tooltip": false,
-	"on-click": "$(wlogout)",
+	"on-click": "$(wlogout -b 5 -c 10 -r 5 -T 300 -B 300 --protocol layer-shell)",
 },
 
 "custom/swaync": {
