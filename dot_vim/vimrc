@@ -1,0 +1,73 @@
+" Set colorscheme
+colorscheme catppuccin_mocha
+set termguicolors
+
+" Set hybrid line numbers
+set nu rnu
+
+" Intendation
+set tabstop=2
+set shiftwidth=2
+set smartindent
+set smarttab
+
+" Disable compatibility with vi
+set nocompatible
+
+" Enable type file detection
+filetype on
+syntax enable
+
+" Search stuff
+set incsearch
+set ignorecase
+set smartcase
+
+" Undo
+set undofile
+set undodir=~/.vim/undodir
+
+set ttimeoutlen=0
+
+call plug#begin()
+
+" List your plugins here
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'christoomey/vim-tmux-navigator'
+
+call plug#end()
+
+" Airline catppuccin theme
+let g:airline_theme = 'catppuccin_mocha'
+
+let g:airline_symbols = {}
+
+" powerline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ' L:'
+let g:airline_symbols.maxlinenr = ''
+let g:airline_symbols.dirty='⚡'
+
+let g:airline_section_a = airline#section#create(['mode'])
+let g:airline_section_z = airline#section#create(['%3p%%', 'linenr', 'maxlinenr'])
+let g:airline_section_warning = ''
+
+let g:airline#extensions#default#layout = [ ['a','c'], ['z'] ]
+
+" Vim-tmux-navigator
+let g:tmux_navigator_no_mappings = 1
+
+nnoremap <silent> <c-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <c-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <c-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <c-l> :TmuxNavigateRight<cr>
+nnoremap <silent> <c-\> :TmuxNavigatePrevious<cr>
+

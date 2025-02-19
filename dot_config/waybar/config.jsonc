@@ -1,0 +1,37 @@
+{
+"include": [
+  "$HOME/.config/waybar/Modules",
+  "$HOME/.config/waybar/ModulesWorkspaces",
+  "$HOME/.config/waybar/ModulesCustom",
+  "$HOME/.config/waybar/ModulesGroups",
+  ],
+
+"layer": "top",
+//"mode": "dock",
+"exclusive": true,
+"passthrough": false,
+"position": "top",
+"spacing": 6,
+"fixed-center": true,
+"ipc": true,
+"margin-top": 3,
+"margin-left": 8,
+"margin-right": 8,
+
+"modules-left": [
+	"custom/menu",
+	"hyprland/workspaces#pacman",
+	"hyprland/window",
+	],
+"modules-center": [
+	"custom/clock",
+	],
+"modules-right": [
+	"custom/playerctl",
+	"network",
+	"custom/swaync",
+	"pulseaudio",
+	"custom/power",
+	],
+
+}
