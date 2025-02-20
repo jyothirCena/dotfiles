@@ -28,6 +28,7 @@
 	],
 "modules-right": [
 	"custom/playerctl",
+	"idle_inhibitor",
 	"network",
 	"custom/swaync",
 	"pulseaudio",
