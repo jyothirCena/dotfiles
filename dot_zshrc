@@ -29,7 +29,7 @@ export EDITOR=vim
 
 # History
 HISTSIZE=5000
-HISTFILE=~/.zsh_history
+HISTFILE=~/.cache/.zsh_history
 SAVEHIST=$HISTSIZE
 HISTDUP=erase
 setopt appendhistory
@@ -54,3 +54,5 @@ alias cat='bat'
 # Shell integrations
 source <(fzf --zsh)
 
+# Source exports
+source $HOME/.config/zsh/exports
