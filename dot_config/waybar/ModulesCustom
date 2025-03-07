@@ -109,7 +109,7 @@
 "custom/menu": {
 	"format": " 󰣇 ",
 	"tooltip":false,
-	"on-click": "pkill -x rofi || ~/.config/rofi/rofi.sh",
+	"on-click": "pkill -x rofi || rofi -show drun",
 },
 
 // This is a custom cava visualizer
